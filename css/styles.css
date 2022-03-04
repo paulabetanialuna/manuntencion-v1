@@ -1,13 +1,17 @@
 html body{font-family:Montserrat,sans-serif}
-img{max-width:100%;vertical-align:top}
-.text-red{color:#e30025!important}
-.header{margin-bottom:51px;background:#e30025}
-.header {display:flex;justify-content:space-between}
+img{max-width:100%;
+    vertical-align:top}
+.text-red{color:#e30025}
 
-@media (max-width:768px){.header{margin-bottom:37px}}
-@media (max-width:768px){.logo{width:81px}}
-@media (max-width:768px){
-.row-landing{margin-bottom:45px}
+header{margin-bottom:51px;
+    background:#e30025;
+    display:flex;
+    justify-content:space-between}
+
+.row-landing{
+    padding:30px 60px;
+}
+
 .row-landing .pre-title{
     margin-top:29px;
     color:#353535;
@@ -16,175 +20,81 @@ img{max-width:100%;vertical-align:top}
     margin-bottom:0;
     text-transform:uppercase}
 
-@media (max-width:768px){
-.row-landing .pre-title{margin-top:0;font-size:14px}}
 .row-landing h2{
     text-transform:uppercase;
     color:#353535;
     font-size:40px;
     font-weight:600;
     margin-bottom:64px}
-
-@media (max-width:768px){
-    .row-landing h2{
-        font-size:24px;
-        margin-bottom:50px
-    }}
-    .row-landing .item-service{
-        list-style:none;
-        padding:0;
-        margin:0;
-        max-width:497px
-    }
-
-@media (max-width:768px){
-.row-landing .item-service{
-    margin-bottom:50px
-    }
-}
+    
+    
+/*Carta de servicio*/
 .row-landing .item-service li{
-    background:#ebebeb;
     position:relative;
     margin-bottom:44px;
     color:#3c3c3c;
     font-weight:500;
     font-size:15.33px;
     line-height:1em;
-    text-transform:uppercase;
     padding:10px 10px 10px 72px;
     margin-left:10px}
     
-    @media (max-width:768px)
-    {.row-landing .item-service li{
-        padding-left:51px;
-        font-size:10px;
-        margin-bottom:40px}}
-        
-        .row-landing .item-service li:last-child{margin-bottom:0}
-        .row-landing .item-service li{
-            width:58px;
-            height:58px;
-            border-radius:50%;
-            background:#fff;
-            border:3px solid #e30025;
-            position:absolute;
-            left:-10px;
-            top:50%;
-            transform:translateY(-50%)}
-            
-    @media (max-width:768px){
-                .row-landing .item-service li{height:50px}}
-                .row-landing .item-service li img{
-                    height:70%;
-                    width:70%;
-                    -o-object-fit:contain;
-                    object-fit:contain;
-                    position:absolute;
-                    left:50%;
-                    top:50%;
-                    transform:translate(-50%,-50%)}
-                
-                    .row-landing {
-                        background:#ebebeb;
-                        border-top:4px solid #e30025;
-                        padding:30px 60px}
-                        
-    @media (max-width:768px){
-                .row-landing {padding:30px}}
-                .row-landing  h3{
-                    font-weight:400;
-                    font-size:24px;
-                    line-height:30px;
-                    color:#232427;
-                    text-transform:uppercase;
-                    text-align:center;
-                    margin-bottom:34px}
-                
-                .row-landing  label{
-                    font-size:11px;
-                    line-height:13.6px;
-                    color:#232427;
-                    text-transform:uppercase;
-                    margin-bottom:10px;
-                    letter-spacing:.1em;
-                    font-weight:500}
-                    
 
-                    
-    @media (max-width:768px){
-        .row-landing  .checkbox-form-group{margin-right:-15px}}
-        .row-landing  .checkbox-form-group input{
-            position:absolute;
-            left:-25px;top:0}
-        .row-landing  .checkbox-form-group label{text-transform:none}
-        
-        .row-landing  .send-form-button{
-            background:#e30025;
-            border:none;
-            border-radius:3px;
-            color:#fff;
-            letter-spacing:.02em;
-            font-size:18px;
-            line-height:23px;font-weight:500;padding:25px;text-align:center}
+    
+/*pre - footer*/
+.pre-footer{
+    text-align:center;
+    padding-bottom:30px}
 
-@media (max-width:768px){
-        .row-landing  .send-form-button{padding:14px}}
-        
-        .row-landing  span.error{
-            font-size:11px;
-            line-height:13.6px;
-            display:block;
-            color:#e30025;
-            margin-top:5px}
-        .pre-footer{
-            text-align:center;
-            padding-bottom:30px
-        }
-        .pre-footer .label-pre-footer{
-            margin-top:30px;
-            font-size:.9em
-        }
-        .pre-footer .cars-image{margin-bottom:10px}
-        footer{
-            background:#e30025;
-            padding-top:20px;
-            padding-bottom:20px
-        }
-        
-        footer .footer-inner{
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            flex-wrap:wrap}
-            
-@media (max-width:768px){
-    footer .footer-inner{
-        text-align:center;
-        justify-content:center
-    }}
-    footer .footer-inner p{
-        color:#fff;
-        font-size:14px;
-        line-height:18px;
-        font-weight:400;
-        margin:0
-    }
+.send-form-button{
+    background:#e30025;
+    border:none;
+    border-radius:3px;
+    color:#fff;
+    letter-spacing:.02em;
+    font-size:18px;
+    line-height:23px;
+    font-weight:500;
+    padding:25px;
+    text-align:center}
 
-@media (max-width:768px){
-    footer .footer-inner p{margin-bottom:15px}}
-  
+/*footer*/
+footer{
+    background:#e30025;
+    display:flex;
+    justify-content:space-between;
+    padding-top:20px;
+    padding-bottom:20px;
+    width: 100%;
+}
+
+footer .footer-inner p{
+    margin-bottom:15px}
+
+
+@media (max-width:768px)
+{   .header{margin-bottom:37px}
+    .logo{width:81px}
+
+    .row-landing{margin-bottom:45px;
+        padding:30px}
+
+    .row-landing .pre-title{margin-top:0;
+        font-size:14px}
+    
+
+    .row-landing h2{
+        font-size:24px;
+        margin-bottom:50px}
+
+
     .customer-data{
         margin-top:40px;
-        border:2px solid #ebebeb;
-        border-top:4px solid #e30025;
         padding:30px 60px;
-        max-width:497px}
-        
-@media (max-width:768px){
-    .customer-data{
-    padding-left:30px;
-    padding-right:30px;
-    margin-bottom:40px}}
+        max-width:497px;
+        padding-left:30px;
+        padding-right:30px;
+        margin-bottom:40px}
     
     .customer-data h4{
         text-transform:uppercase;
@@ -192,14 +102,99 @@ img{max-width:100%;vertical-align:top}
         font-size:20px;
         font-weight:600;
         margin-bottom:10px}
-        
-        .customer-data p
-        {color:#e30025;
-            font-weight:700}
-        .thanks-page{text-align:center}
-        .thanks-page img{height:100vh}
+    
+    .customer-data p
+    {font-weight:700}
 
-@media (max-width:768px){
-    .thanks-page img{height:auto;width:100%}}
+/*Tarjetas de servicio*/
+    
+    .row-landing .item-service{
+        list-style:none;
+        padding:0;
+        margin:0;
+        max-width:497px}
+    .row-landing .item-service{
+    margin-bottom:50px}
+    
+    .row-landing .item-service li{
+        padding-left:51px;
+        font-size:10px;
+        margin-bottom:10px}
+        
+    .row-landing .item-service li:last-child{margin-bottom:0}
+    
+    .row-landing .item-service li{height:50px}
+    
+    .row-landing  h3{
+        font-weight:400;
+        font-size:24px;
+        line-height:30px;
+        color:#232427;
+        text-transform:uppercase;
+        text-align:center;
+        margin-bottom:34px}
+                
+    .row-landing  .checkbox-form-group{
+        margin-right:-15px}
+    
+    .row-landing  .checkbox-form-group input{
+        position:absolute;
+        left:-25px;top:0}
+    
+    .row-landing  .checkbox-form-group label{
+        text-transform:none}
+        
+/*pre - footer*/
+    .pre-footer .send-form-button{
+        background:#e30025;
+        border:none;
+        border-radius:3px;
+        color:#fff;
+        letter-spacing:.02em;
+        font-size:18px;
+        line-height:23px;
+        font-weight:500;
+        padding:25px;
+        text-align:center}
+    
+   
+    .pre-footer{
+        text-align:center;
+        padding-bottom:30px}
+
+    .pre-footer .label-pre-footer{
+        margin-top:30px;
+        font-size:.9em
+    }
+
+/*footer*/
+    
+    
+    footer{
+        background:#e30025;
+        padding-top:20px;
+        padding-bottom:20px
+    }
+    
+    footer .footer-inner{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-wrap:wrap}
+        
+    footer .footer-inner{
+        text-align:center;
+        justify-content:center
+    }
+    footer .footer-inner p{
+        color:#fff;
+        font-size:14px;
+        line-height:18px;
+        font-weight:400;
+        margin:0
+    }
+    footer .footer-inner p{
+        margin-bottom:15px}
+    
 
 }
