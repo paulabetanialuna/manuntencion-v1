@@ -1,18 +1,18 @@
-html body{font-family:Montserrat,sans-serif}
+html body{font-family:Lato,sans-serif}
 img{max-width:100%;
     vertical-align:top}
 .text-red{color:#e30025}
+
+li {
+    list-style: none;
+}
 
 header{margin-bottom:51px;
     background:#e30025;
     display:flex;
     justify-content:space-between}
 
-.row-landing{
-    padding:30px 60px;
-}
-
-.row-landing .pre-title{
+.pre-title{
     margin-top:29px;
     color:#353535;
     font-size:20px;
@@ -20,7 +20,7 @@ header{margin-bottom:51px;
     margin-bottom:0;
     text-transform:uppercase}
 
-.row-landing h2{
+ h2{
     text-transform:uppercase;
     color:#353535;
     font-size:40px;
@@ -29,24 +29,50 @@ header{margin-bottom:51px;
     
     
 /*Carta de servicio*/
-.row-landing .item-service li{
-    position:relative;
-    margin-bottom:44px;
-    color:#3c3c3c;
-    font-weight:500;
-    font-size:15.33px;
-    line-height:1em;
-    padding:10px 10px 10px 72px;
-    margin-left:10px}
-    
 
+.container-service{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.card-service{
+    background: #E5E5E5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+    
     
 /*pre - footer*/
 .pre-footer{
     text-align:center;
     padding-bottom:30px}
 
-.send-form-button{
+.continue{
+    margin: 3em 0em;
+    justify-items: center;
+}
+
+.confirm-service button{
+    background:#e30025;
+    border:none;
+    color:#fff;
+    letter-spacing:.02em;
+    font-size:18px;
+    line-height:23px;
+    font-weight:500;
+    padding:10px 25px;
+    text-align:center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+.boton-continuar {
     background:#e30025;
     border:none;
     border-radius:3px;
@@ -55,14 +81,16 @@ header{margin-bottom:51px;
     font-size:18px;
     line-height:23px;
     font-weight:500;
-    padding:25px;
-    text-align:center}
+    padding:20px;
+    text-align:center;
+    }
 
 /*footer*/
 footer{
     background:#e30025;
     display:flex;
     justify-content:space-between;
+    margin-top:20px ;
     padding-top:20px;
     padding-bottom:20px;
     width: 100%;
@@ -76,14 +104,11 @@ footer .footer-inner p{
 {   .header{margin-bottom:37px}
     .logo{width:81px}
 
-    .row-landing{margin-bottom:45px;
-        padding:30px}
-
-    .row-landing .pre-title{margin-top:0;
+    .pre-title{margin-top:0;
         font-size:14px}
     
 
-    .row-landing h2{
+     h2{
         font-size:24px;
         margin-bottom:50px}
 
@@ -108,24 +133,17 @@ footer .footer-inner p{
 
 /*Tarjetas de servicio*/
     
-    .row-landing .item-service{
+    .item-service{
         list-style:none;
         padding:0;
         margin:0;
         max-width:497px}
-    .row-landing .item-service{
+    .item-service{
     margin-bottom:50px}
     
-    .row-landing .item-service li{
-        padding-left:51px;
-        font-size:10px;
-        margin-bottom:10px}
-        
-    .row-landing .item-service li:last-child{margin-bottom:0}
+    .plus-service li:last-child{margin-bottom:0}
     
-    .row-landing .item-service li{height:50px}
-    
-    .row-landing  h3{
+     h3{
         font-weight:400;
         font-size:24px;
         line-height:30px;
@@ -134,18 +152,33 @@ footer .footer-inner p{
         text-align:center;
         margin-bottom:34px}
                 
-    .row-landing  .checkbox-form-group{
+     .checkbox-form-group{
         margin-right:-15px}
     
-    .row-landing  .checkbox-form-group input{
+    .checkbox-form-group input{
         position:absolute;
         left:-25px;top:0}
     
-    .row-landing  .checkbox-form-group label{
+    .checkbox-form-group label{
         text-transform:none}
+
+
+    .confirm-service button{
+        background:#e30025;
+        border:none;
+        color:#fff;
+        letter-spacing:.02em;
+        font-size:18px;
+        line-height:23px;
+        font-weight:500;
+        padding: 20px;
+        text-align:center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+    }
         
 /*pre - footer*/
-    .pre-footer .send-form-button{
+.boton-continuar{
         background:#e30025;
         border:none;
         border-radius:3px;
@@ -154,6 +187,7 @@ footer .footer-inner p{
         font-size:18px;
         line-height:23px;
         font-weight:500;
+        margin: 20px;
         padding:25px;
         text-align:center}
     

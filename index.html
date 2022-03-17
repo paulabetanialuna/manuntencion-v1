@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,500,500i,600,600i,700,700i&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -14,14 +14,14 @@
 <body>
     <header>
         <div>
-            <img src="logo-nav.png" alt="Logo" class="logo">
+            <img src="img/logo-nav.png" alt="Logo" class="logo">
 
         </div>
     </header>
 
 <!--Comienza el cuerpo de la landign-->
 <div class="container">
-    <div class="row-landing">
+
         <p class="pre-title"> EXPERIENCIA DE SIMULACION DE AGENDAMIENTOS </p>
         <h2> Ayudanos a construir los nuevos<br> servicios de Manteniento Tecnico en <span class="text-red">DERCO.</span></h2>
 
@@ -29,110 +29,16 @@
             <h4> DATOS DEL VEHICULO:</h4>
             <form>
                 <!--auto de la base de datos del cliente-->
-                <p><input type="radio" name="autocliente" value="valid" checked="checked"/> Conserva su <!--PREGUNTAR A GRICEL POR EL AUTO--></p>
+                <p><input type="radio" name="autocliente" value="valid" checked="checked"/> Conserva su <!--Marca Modelo--></p>
                 <!--cambio en el vehiculo-->
                 <p><input type="radio" name="autocliente" value="invalid"/> Cambie mi vehiculo. </p>
+                <!--FALTA DESPLEGABLE BOX-->
             </form>
-        </div>
-        
-<!--Tabla de servicios-->       
 
-        <div class="container-service">
-            <h4> OPCIONES DE SERVICIO DE MANTENIMIENTO </h4>
-            <p>Por favor, seleccionar cual de las siguientes opciones de Servicio de Mantenimiento Derco sería más atractiva para usted.</p>
-
-<!--Tarjeta de cada servicio-->
-            <div class="card-service">
-                <div class="title-service">
-                <p><input type="radio" name="service" value="tradicional"/> SERVICIO .... </p>
-                </div>
-                
-                <div class="item-service">
-                    <ul>
-                        <li>item...</li>
-                        <li>item...</li>
-                        <li>item...</li>
-                        <li>item...</li>
-                    </ul>
-                </div>
-                <div class="plus-service">
-                    <ul>
-                        <li>LAVADO</li>
-                        <li>GARANTIA</li>
-                    </ul>
-                </div>
-                <div class="hours-service">
-                    <p>N HORAS</p>
-                </div>
-                <div class="price-service">
-                    <h4>$000.000</h4>
-                </div>
+            <div class="continue">
+                <a target="_blank" class="boton-continuar" href="paso2.html">CONTINUAR</a>
             </div>
-<!--Tarjeta de cada servicio-->
-            <div class="card-service">
-                <div class="title-service">
-                <p><input type="radio" name="service" value="paquetizado"/> SERVICIO .... </p>
-                </div>
-                <div class="item-service">
-                    <ul>
-                        <li>item...</li>
-                        <li>item...</li>
-                        <li>item...</li>
-                        <li>item...</li>
-                    </ul>
-                </div>
-                <div class="plus-service">
-                    <ul>
-                        <li>GARANTIA</li>
-                    </ul>
-                </div>
-                <div class="hours-service">
-                    <p>N HORAS</p>
-                </div>
-                <div class="price-service">
-                    <h4>$000.000</h4>
-                </div>
-            </div>
-<!--Tarjeta de cada servicio-->
-            <div class="card-service">
-                <div class="title-service">
-                <p><input type="radio" name="service" value="aceite"/> SERVICIO .... </p>
-                </div>
-                <div class="item-service">
-                    <ul>
-                        <li>item...</li>
-                        <li>item...</li>
-                        <li>item...</li>
-                        <li>item...</li>
-                    </ul>
-                </div>
-                <div class="plus-service">
-                    <ul>
-                        <li>NO CONSERVA GARANTIA</li>
-                    </ul>
-                </div>
-                <div class="hours-service">
-                    <p>N HORAS</p>
-                </div>
-                <div class="price-service">
-                    <h4>$00.000</h4>
-                </div>
-            </div>            
-<!--Tarjeta de cada servicio-->
-            <div class="card-service">
-                <div class="title-service">
-                <p><input type="radio" name="service" value="ninguno"/> NINGUNO ME CONVENCE </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="pre-footer">
-        <form>
-            <p><input type="checkbox" name="interesado" value="valid"/> Quiero seguir participando en este tipo de iniciativas</p>
-            <button type="submit" class="send-form-button"> PARTICIPAR <!--como redirecciono a agradecimientos--></button>
-        </form>
-    </div>
+        </div>      
 
 </div>
         <!--Termina el cuerpo de la landign-->
@@ -140,7 +46,7 @@
         <div class="container">
             <div class="footer-inner">
                 <p>2022 Todos los derechos reservados Derco S.A</p>
-                <img src="logo-footer.png" alt="logo Derco">
+                <img src="img/logo-footer.png" alt="logo Derco">
             </div>
         </div>
     </footer>   
