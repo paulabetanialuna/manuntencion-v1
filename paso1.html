@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--este script sirve para linkear los iconos en toda la pagina-->
+    <script src="https://kit.fontawesome.com/58e875ea2b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,500,500i,600,600i,700,700i&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -21,89 +23,83 @@
 <div class="container">
     <!--Tabla de servicios--> 
     <div class="intro-paso">
-        <h2> OPCIONES DE SERVICIO DE MANTENIMIENTO </h2>
-            <p>Por favor, seleccionar cual de las siguientes opciones de Servicio de Mantenimiento Derco sería más atractiva para usted.</p>
-
+        <h2 class="text-red"> Servicio mantenimiento </h2>
+            </p>
+            <p>Por favor, seleccionar una de las opciones
     </div>      
 
         <div class="container-service">
     <!--Tarjeta de cada servicio-->
-            <div class="card-service">
-                <div class="card-nav">
-                    <h5>SERVICIO</h5>
+
+     <!--Tarjeta de cada servicio-->
+     <div class="card-service">
+
+        <!--Nombre de cada servicio-->
+        <div class="title-service">
+        <span> MANTENIMIENTO</span><h2 class="text-red">FULL</h2>
+        </div>
+
+        <!--Tiempo del servicio-->
+        <div class="hours-service">
+            <p class="text-red">DURACIÓN DOS HORAS</p>
+        </div>
+
+        <!--Costo del servicio-->
+        <div class="price-service">
+            <h2>$000.000</h2>
+            <p>Precio base + $58.000*</p>
+        </div>
+
+        
+        <!--Plus Resumen-->
+        <div class="plus-service">
+            <ul>
+                <li>GARANTIA</li>
+                <li>LAVADO</li>
+                <li>BALANCEO</li>
+                <li>ALINEADO</li>
+                <li>SANITIZACIÓN DE DUCTOS</li>
+            </ul>
+        </div>
+        <!--Items resumidos-->
+        <div class="item-resume">
+            <ul>
+                <li>17 operaciones/acciones en tu vehiculo</li>
+                <li>Incluye todos los repuestos e insumos</li>  
+            </ul>
+        </div>
+
+        <!--Boton confirmacion-->
+        <div class="confirm-service">
+                <form action="https://www....">
+                    <button name="nombreservicio" type="submit">SELECCIONAR</button>
+                </form>
+        </div>
+
+        <!--Seccion de los Items -->
+        <div class="items-service">
+            <p>Ver todos los items</p>
+                <div class="items-deploy"> <!--Items desplegados-->
+                <ul>
+                    <li></li>
+                </ul>
                 </div>
+        </div>
+        
+    </div>
+    
+           
+            <!--Tarjeta de cada servicio-->
+            <div class="card-service">
 
                 <!--Nombre de cada servicio-->
                 <div class="title-service">
-                <h2> MANTENIMIENTO FULL</h2>
-                </div>
-
-                <!--Plus Resumen-->
-                <div class="plus-service">
-                    <ul>
-                        <li>GARANTIA</li>
-                        <li>LAVADO</li>
-                        <li>BALANCEO</li>
-                        <li>ALINEADO</li>
-                        <li>SANITIZACIÓN DE DUCTOS</li>
-                    </ul>
-                </div>
-
-                <!--Costo del servicio-->
-                <div class="price-service">
-                    <h2>$000.000</h2>
-                    <p>Precio base + $58.000*</p>
+                <span> MANTENIMIENTO</span><h2 class="text-red">PLUS</h2>
                 </div>
 
                 <!--Tiempo del servicio-->
                 <div class="hours-service">
-                    <p>DURACIÓN DE 2 HORAS</p>
-                </div>
-
-                <!--Items resumidos-->
-                <div class="item-resume">
-                    <ul>
-                        <li>17 operaciones/acciones en tu vehiculo</li>
-                        <li>Incluye todos los repuestos e insumos</li>  
-                    </ul>
-                </div>
-
-                <!--Boton confirmacion-->
-                <div class="confirm-service">
-                        <form action="https://www....">
-                            <button name="nombreservicio" type="submit">SELECCIONAR</button>
-                        </form>
-                </div>
-
-                <!--Seccion de los Items -->
-                <div class="items-service">
-                    <p>Ver todos los items</p>
-                        <div class="items-deploy"> <!--Items desplegados-->
-                        <ul>
-                            <li></li>
-                        </ul>
-                        </div>
-                </div>
-                
-            </div>
-            <!--Tarjeta de cada servicio-->
-            <div class="card-service">
-                <div class="card-nav">
-                    <h5>SERVICIO</h5>
-                </div>
-
-                <!--Nombre de cada servicio-->
-                <div class="title-service">
-                <h2> MANTENIMIENTO PLUS </h2>
-                </div>
-
-                <!--Plus Resumen-->
-                <div class="plus-service">
-                    <ul>
-                        <li>GARANTIA</li>
-                        <li>LAVADO</li>
-                        <li>BALANCEO</li>
-                    </ul>
+                    <p class="text-red">DURACIÓN UNA HORA Y MEDIA</p>
                 </div>
 
                 <!--Costo del servicio-->
@@ -112,11 +108,15 @@
                     <p>Precio base + $25.000*</p>
                 </div>
 
-                <!--Tiempo del servicio-->
-                <div class="hours-service">
-                    <p>DURACIÓN DE 90 MINUTOS</p>
+                
+                <!--Plus Resumen-->
+                <div class="plus-service">
+                    <ul>
+                        <li>GARANTIA</li>
+                        <li>LAVADO</li>
+                        <li>BALANCEO</li>
+                    </ul>
                 </div>
-
                 <!--Items resumidos-->
                 <div class="item-resume">
                     <ul>
@@ -145,115 +145,107 @@
             </div>
             
             <!--Tarjeta de cada servicio-->
+            
             <div class="card-service">
-                <div class="card-nav">
-                    <h5>SERVICIO</h5>
-                </div>
+            
+             <!--Nombre de cada servicio-->
+             <div class="title-service">
+             <h2 class="text-red">MANTENIMIENTO</h2>
+             </div>
+         
+             <!--Tiempo del servicio-->
+             <div class="hours-service">
+                 <p class="text-red">DURACIÓN UNA HORA</p>
+             </div>
+         
+             <!--Costo del servicio-->
+             <div class="price-service">
+                 <h2>$00.000</h2>
+                 <p>Precio base*</p>
+             </div>
+         
 
-                <!--Nombre de cada servicio-->
-                <div class="title-service">
-                <h2> MANTENIMIENTO  </h2>
-                </div>
+             <!--Plus Resumen-->
+             <div class="plus-service">
+                 <ul>
+                     <li>GARANTIA</li>
+                     <li>LAVADO</li>
+                 </ul>
+             </div>
+             <!--Items resumidos-->
+             <div class="item-resume">
+                 <ul>
+                     <li> Mantenimiento básico recomendado por el fabricante.</li>
+                     <li>Incluye todos los repuestos e insumos</li>  
+                 </ul>
+             </div>
+         
+             <!--Boton confirmacion-->
+             <div class="confirm-service">
+                     <form action="https://www....">
+                         <button name="nombreservicio" type="submit">SELECCIONAR</button>
+                     </form>
+             </div>
+         
+             <!--Seccion de los Items -->
+             <div class="items-service">
+                <ul>
+                    <li><a href="#"> Ver detalle del servicio </a><i class="fa-solid fa-angle-down"></i></li>
+                </ul>
+             </div>
 
-                <!--Plus Resumen-->
-                <div class="plus-service">
-                    <ul>
-                        <li>GARANTIA</li>
-                        <li>LAVADO</li>
-                    </ul>
-                </div>
-
-                <!--Costo del servicio-->
-                <div class="price-service">
-                    <h2>$00.000</h2>
-                    <p>Precio base*</p>
-                </div>
-
-                <!--Tiempo del servicio-->
-                <div class="hours-service">
-                    <p>DURACIÓN DE 1 HORA</p>
-                </div>
-
-                <!--Items resumidos-->
-                <div class="item-resume">
-                    <ul>
-                        <li>Mantenimiento básico recomendado por el fabricante.</li>
-                        <li>Incluye todos los repuestos e insumos</li>  
-                    </ul>
-                </div>
-
-                <!--Boton confirmacion-->
-                <div class="confirm-service">
-                        <form action="https://www....">
-                            <button name="nombreservicio" type="submit">SELECCIONAR</button>
-                        </form>
-                </div>
-
-                <!--Seccion de los Items -->
-                <div class="items-service">
-                    <p>Ver todos los items</p>
-                        <div class="items-deploy"> <!--Items desplegados-->
-                        <ul>
-                            <li></li>
-                        </ul>
-                        </div>
-                </div>
-                
             </div>
+
             
             <!--Tarjeta de cada servicio-->
             <div class="card-service">
-                <div class="card-nav">
-                    <h5>SERVICIO</h5>
-                </div>
-
+            
                 <!--Nombre de cada servicio-->
                 <div class="title-service">
-                <h2> CAMBIO DE ACEITE </h2>
+                <h2>CAMBIO DE ACEITE</h2>
                 </div>
-
-                <!--Plus Resumen-->
-                <div class="plus-service">
-                        <p>NO CONSERVA LA GARANTIA</p>  
+            
+                <!--Tiempo del servicio-->
+                <div class="hours-service">
+                    <p class="text-red">DURACIÓN UNA HORA</p>
                 </div>
-
+            
                 <!--Costo del servicio-->
                 <div class="price-service">
                     <h2>$00.000</h2>
                 </div>
-
-                <!--Tiempo del servicio-->
-                <div class="hours-service">
-                    <p>DURACIÓN DE 1 HORA</p>
+            
+   
+                <!--Plus Resumen-->
+                <div class="plus-service">
+                    <ul>
+                        <li class="text-red">NO CONSERVA GARANTIA</li>
+                        
+                    </ul>
                 </div>
-
                 <!--Items resumidos-->
                 <div class="item-resume">
                     <ul>
-                        <li>Cambio de aceite.</li>
-                        <li>Cambio del filtro de aceite</li>  
-                        <li>Cambio del filtro de aire del motor.</li>
+                        <li> Cambio de aceite.</li>
+                        <li>Cambio del filtro de aceite</li> 
+                        <li>Cambio del filtro de aire del motor.</li> 
                     </ul>
                 </div>
-
+            
                 <!--Boton confirmacion-->
                 <div class="confirm-service">
                         <form action="https://www....">
                             <button name="nombreservicio" type="submit">SELECCIONAR</button>
                         </form>
                 </div>
-            </div>
+   
+               </div>
+        
 
             <!--Tarjeta de cada servicio-->
             <div class="card-service">
                 <div class="title-service">
                     <h2>NINGUNO ME CONVENCE</h2>
-                    </div>
-
-                     <!--Items resumidos-->
-                <div class="item-resume">
-                    <p>Si ninguna de nuestras propuesta te parece interesante para agendar, nos encantaria saber como podriamos mejorar y cubrir sus expectativas.</p>
-                    <span class="text-red">¡Esta garantizada tu participando por el sorteo de la Giftcard!</span>
                 </div>
 
                 <!--Boton confirmacion-->
@@ -267,23 +259,14 @@
             
         </div>
     </div>
-
-    <div class="pre-footer">
-        <form>
-            <p><input type="checkbox" name="interesado" value="valid"/> Quiero seguir participando en este tipo de iniciativas</p>
-        </form>
-    </div>
-
-
+ 
 </div>
 <!--Termina el cuerpo de la landign-->
 <footer>
-    <div class="container">
         <div class="footer-inner">
             <p>2022 Todos los derechos reservados Derco S.A</p>
             <img src="img/logo-footer.png" alt="logo Derco">
         </div>
-    </div>
 </footer>   
 
 
