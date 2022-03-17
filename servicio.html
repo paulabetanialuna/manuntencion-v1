@@ -15,8 +15,7 @@
 <body>
     <header>
         <div>
-            <img src="img/logo-nav.png" alt="Logo" class="logo">
-
+            <a target="_blank" class="boton-home" href="index.html"><img src="img/logo-nav.png" alt="Logo" class="logo"></a>
         </div>
     </header>
 
@@ -24,12 +23,11 @@
     <!--Tabla de servicios--> 
     <div class="intro-paso">
         <h2 class="text-red"> Servicio mantenimiento </h2>
-            </p>
-            <p>Por favor, seleccionar una de las opciones
+        <p>Por favor, seleccionar una de las opciones</p>
+           
     </div>      
 
         <div class="container-service">
-    <!--Tarjeta de cada servicio-->
 
      <!--Tarjeta de cada servicio-->
      <div class="card-service">
@@ -49,16 +47,16 @@
             <h2>$000.000</h2>
             <p>Precio base + $58.000*</p>
         </div>
-
+        <hr>
         
         <!--Plus Resumen-->
         <div class="plus-service">
-            <ul>
-                <li>GARANTIA</li>
-                <li>LAVADO</li>
+            <ul class="plus-service">
+                <li>GARANTIA +</li>
+                <li>LAVADO +</li>
                 <li>BALANCEO</li>
-                <li>ALINEADO</li>
-                <li>SANITIZACIÓN DE DUCTOS</li>
+                <li id="mas">ALINEADO +</li>
+                <li id="mas">SANITIZACIÓN DE DUCTOS</li>
             </ul>
         </div>
         <!--Items resumidos-->
@@ -78,13 +76,11 @@
 
         <!--Seccion de los Items -->
         <div class="items-service">
-            <p>Ver todos los items</p>
-                <div class="items-deploy"> <!--Items desplegados-->
-                <ul>
-                    <li></li>
-                </ul>
-                </div>
-        </div>
+            <ul>
+                <li><a href="#"> Ver detalle del servicio </a><i class="fa-solid fa-angle-down"></i></li>
+            </ul>
+         </div>
+
         
     </div>
     
@@ -107,14 +103,14 @@
                     <h2>$000.000</h2>
                     <p>Precio base + $25.000*</p>
                 </div>
-
+                <hr>
                 
                 <!--Plus Resumen-->
                 <div class="plus-service">
                     <ul>
-                        <li>GARANTIA</li>
-                        <li>LAVADO</li>
-                        <li>BALANCEO</li>
+                        <li>GARANTIA +</li>
+                        <li>LAVADO +</li>
+                        <li id="mas">BALANCEO</li>
                     </ul>
                 </div>
                 <!--Items resumidos-->
@@ -134,13 +130,11 @@
 
                 <!--Seccion de los Items -->
                 <div class="items-service">
-                    <p>Ver todos los items</p>
-                        <div class="items-deploy"> <!--Items desplegados-->
-                        <ul>
-                            <li></li>
-                        </ul>
-                        </div>
-                </div>
+                    <ul>
+                        <li><a href="#"> Ver detalle del servicio </a><i class="fa-solid fa-angle-down"></i></li>
+                    </ul>
+                 </div>
+    
                 
             </div>
             
@@ -163,13 +157,13 @@
                  <h2>$00.000</h2>
                  <p>Precio base*</p>
              </div>
-         
+            <hr>
 
              <!--Plus Resumen-->
              <div class="plus-service">
                  <ul>
-                     <li>GARANTIA</li>
-                     <li>LAVADO</li>
+                     <li id="mas">GARANTIA +</li>
+                     <li id="mas">LAVADO</li>
                  </ul>
              </div>
              <!--Items resumidos-->
@@ -215,12 +209,11 @@
                     <h2>$00.000</h2>
                 </div>
             
-   
+                <hr>
                 <!--Plus Resumen-->
                 <div class="plus-service">
                     <ul>
-                        <li class="text-red">NO CONSERVA GARANTIA</li>
-                        
+                        <li id="peligro">NO CONSERVA GARANTIA</li>
                     </ul>
                 </div>
                 <!--Items resumidos-->

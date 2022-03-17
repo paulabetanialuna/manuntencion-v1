@@ -3,6 +3,7 @@ html body{font-family:Lato,sans-serif}
 
 img{max-width:100%;
     vertical-align:top}
+
 .text-red{color:#e30025}
 
 li {
@@ -20,15 +21,22 @@ header{margin-bottom:51px;
     font-size:20px;
     font-weight:500;
     margin-bottom:0;
-    text-transform:uppercase}
+}
 
  h2{
-    text-transform:uppercase;
     color:#353535;
     font-size:3rem;
     font-weight:600;
     margin-bottom:64px}
 /* Carta datos del vehiculo*/
+
+.title-service{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-weight: 600;
+}
 
 .customer-data{
     background: #FFFFFF;
@@ -42,10 +50,10 @@ header{margin-bottom:51px;
     }
 
 hr {
-    height: 10px;
-    width: 80%;
+    border-top:2px;
+    width: 100%;
     background-color:#E30025;
-    ;
+    text-align: center;
   }
 
 /*Boton dee opcion*/
@@ -133,12 +141,41 @@ hr {
     padding: 10px;
     margin: 15px;
     text-align: center;
+    width: 360px;
 }
 
+/*servicios plus*/
+.plus-service ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.plus-service li{
+    margin: 0px 5px;
+}
+#mas{
+    background-color: #7E7E7E;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 0px 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#peligro {
+    color:#e30025;
+    border-radius: 10px;
+    border: solid 1px #e30025 ;
+    padding: 0px 10px;
+
+}
 /*seccion ver mas*/
 
 .items-service{
-    margin: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -152,12 +189,17 @@ hr {
 
 .items-service i{
     color: #5F5F5F;
-    font-size: 16px;
+    font-size: 12px;
     text-decoration: none;
     padding-left: 1rem;
 }
 
+/*resumen items*/
 
+.item-resume{
+    text-align: justify;
+    padding-left: 1rem;
+}
     
 /*pre - footer*/
 .pre-footer{
@@ -181,6 +223,7 @@ hr {
     text-align:center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
+    margin-bottom: 1.3rem;
 }
 .boton-continuar {
     background:#e30025;
@@ -231,7 +274,6 @@ footer .footer-inner p{
         margin-bottom:40px}
     
     .customer-data h4{
-        text-transform:uppercase;
         color:#353535;
         font-size:20px;
         font-weight:600;
@@ -249,8 +291,8 @@ footer .footer-inner p{
 
 
     hr {
-        height: 1px;
-        width: 80%;
+        border-top: 2px;
+        width: 100%;
         background-color:#E30025;
         ;
       }
@@ -264,14 +306,13 @@ footer .footer-inner p{
     .item-service{
     margin-bottom:50px}
     
-    .plus-service li:last-child{margin-bottom:0}
+    
     
      h3{
         font-weight:400;
         font-size:24px;
         line-height:30px;
         color:#232427;
-        text-transform:uppercase;
         text-align:center;
         margin-bottom:34px}
                 
