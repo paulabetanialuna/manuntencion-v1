@@ -1,5 +1,8 @@
 html body{font-family:Lato,sans-serif}
-
+a:link { text-decoration:none;
+color: #FFFFFF; }
+a:visited { text-decoration:none;
+color: #FFFFFF; }
 
 img{max-width:100%;
     vertical-align:top}
@@ -10,11 +13,25 @@ li {
     list-style: none;
 }
 
-header{margin-bottom:51px;
+/*header*/
+.nav-bar{
+    margin-bottom:0px;
     background:#e30025;
-    display:flex;
-    justify-content:space-between}
+    }
+.header-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
 
+.header-text{
+    padding: 50px;
+}
+
+.banner{
+    width: 600px;
+    margin-right: 20px;
+}
 .pre-title{
     margin-top:29px;
     color:#353535;
@@ -28,7 +45,19 @@ header{margin-bottom:51px;
     font-size:3rem;
     font-weight:600;
     margin-bottom:64px}
-/* Carta datos del vehiculo*/
+
+
+    /*cuerpo*/
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Carta datos del vehiculo*/
 
 .title-service{
     display: flex;
@@ -42,11 +71,41 @@ header{margin-bottom:51px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    
+    margin-top:40px;
+    max-width:497px;
+    padding: 30px 30px;
+    padding-left:50px;
+    margin-bottom:40px
+   
 }
+
+.vehiculo-data
+{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-top:40px;
+    width:900px;
+    padding: 30px 30px;
+    padding-left:50px;
+    margin-bottom:40px
+   
+}
+
+.vehiculo-data h4{
+    font-size: 2rem;
+    color: #232427;
+}
+
+
+.customer-data p
+{font-weight:700}
+
+
 
 .customer-data h4{
     padding-bottom: 5px;
+    color:#353535;
     }
 
 hr {
@@ -54,6 +113,7 @@ hr {
     width: 100%;
     background-color:#E30025;
     text-align: center;
+    margin-bottom: 20px;
   }
 
 /*Boton dee opcion*/
@@ -98,6 +158,7 @@ hr {
   .container input:checked ~ .checkmark {
     background-color:#E30025;
   ;
+  margin-right: 20px;
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -247,6 +308,7 @@ footer{
     padding-top:20px;
     padding-bottom:20px;
     width: 100%;
+    color: #FFFFFF;
 }
 
 footer .footer-inner p{
@@ -254,8 +316,32 @@ footer .footer-inner p{
 }
 
 @media (max-width:768px)
-{   .header{margin-bottom:37px}
+{   .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
     .logo{width:81px}
+
+    .header-banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+    .header-text{
+        margin: 10px 30px;
+        padding: 5px;
+    }
+
+    .horario-img{
+        width: 0%;
+    }
+
+    .extra-img{
+        width: 0%;
+    }
 
     .pre-title{margin-top:0;
         font-size:14px}
@@ -263,48 +349,37 @@ footer .footer-inner p{
 
      h2{
         font-size:24px;
-        margin-bottom:30px}
+        margin-bottom:20px}
 
-
-    .customer-data{
-        margin-top:40px;
-        max-width:497px;
-        padding: 30px 30px;
-        padding-left:50px;
-        margin-bottom:40px}
-    
     .customer-data h4{
-        color:#353535;
-        font-size:20px;
-        font-weight:600;
+         font-size:20px; font-weight:600;
        }
     
-    .customer-data p
-    {font-weight:700}
-
-
-    .customer-data{
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-    }
-
-
-    hr {
-        border-top: 2px;
-        width: 100%;
-        background-color:#E30025;
-        ;
-      }
+    
 /*Tarjetas de servicio*/
+
+.vehiculo-data
+{
+    margin-top:40px;
+    max-width:497px;
+    padding: 30px 30px;
+    padding-left:50px;
+    margin-bottom:40px
+   
+}
+
+.customer-data{
+    margin-top:0px;
+   
+}
     
     .item-service{
         list-style:none;
         padding:0;
         margin:0;
         max-width:497px}
-    .item-service{
-    margin-bottom:50px}
+         .item-service{
+        margin-bottom:50px}
     
     
     
@@ -340,20 +415,26 @@ footer .footer-inner p{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
     }
+    .continue{
+        margin: 10px;
+    }
         
 /*pre - footer*/
 .boton-continuar{
         background:#e30025;
         border:none;
         border-radius:3px;
-        color:#fff;
         letter-spacing:.02em;
         font-size:18px;
         line-height:23px;
-        font-weight:500;
-        margin: 20px;
         padding:25px;
-        text-align:center}
+        text-align:center;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 800;
+        }
+
+    
     
    
     .pre-footer{
@@ -371,7 +452,8 @@ footer .footer-inner p{
     footer{
         background:#e30025;
         padding-top:5px;
-        padding-bottom:5px
+        padding-bottom:5px;
+        margin-top: 50px;
     }
     
     .footer-inner{
