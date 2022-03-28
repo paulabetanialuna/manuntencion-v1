@@ -1,62 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,500,500i,600,600i,700,700i&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <title>Simulacion Mantenimiento</title>
-    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Simulacion Mantenimiento</title>    
 </head>
 <body>
-    <header>
-        <div class="nav-bar">
-            <a target="_blank" class="boton-home" href="index.html"><img src="img/logo-nav.png" alt="Logo" class="logo"></a>
-        </div>
-
-        <div class="header-banner">
-            <img src="img/img.jpg" alt="hombre revisando automovil" class="banner">
-            <div class="header-text">
-                <p class="pre-title"> EXPERIENCIA DE SIMULACION DE AGENDAMIENTOS </p>
-                <h2> Ayudanos a construir los nuevos<br> servicios de Manteniento Tecnico en <span class="text-red">DERCO.</span></h2>
-            </div>    
-        </div>
-
-    </header>
-
-<!--Comienza el cuerpo de la landign-->
+<header>
+    <div class="nav-bar">
+        <a target="_self" class="boton-home" href="index.html"><img src="img/logo-nav.png" alt="Logo" class="logo"></a>
+    </div>
+    <div class="header-banner">
+        <img src="img/img.jpg" alt="hombre revisando automovil" class="banner">
+        <div class="header-text">
+            <p class="pre-title"> EXPERIENCIA DE SIMULACIÓN DE AGENDAMIENTOS </p>
+            <h2> Ayúdanos a construir los nuevos<br> servicios de Mantención Técnico en <span class="text-red">DERCO.</span></h2>
+        </div>    
+    </div>
+</header>
 <div class="container">
-
-        
-        <div class="vehiculo-data">
-            <h4> DATOS DEL VEHICULO:</h4>
-            <hr>
-            <label class="container2">
-                <input type="radio" checked="checked" name="radio">
-                <span class="checkmark"></span>
-              Aun conserva su ....</label>
-
-              <label class="container2">
-                <input type="radio" checked="checked" name="radio">
-                <span class="checkmark"></span>
-              Cambie mi vehiculo</label>
-              
-        </div>  
-            <div class="continue">
-                <a class="boton-continuar" href="servicio.html">CONTINUAR</a>
-            </div>
-           
-
+    <div class="vehiculo-data">
+       <h4> DATOS DEL VEHÍCULO:</h4>
+       <hr>
+       <label class="container2">
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+         Aún conserva su </label><!--Este campo debe mostrar el modelo y marca del vehiculo del cliente que se le envio el mail-->
+         <label class="container2">
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+         Cambie mi vehículo</label>
+         <br>
+     <input type="text" id="cambia" name="cambia" placeholder="Modelo y Marca de su vehículo" size="40"> <!--En caso de cambiar el vehiculo, se debe guardar el nuevo modelo y marca-->
+     <br>
+       <!--script para mostrar en caso de seleccionar"cambio"-->
+     <script>
+       function hideElem() {
+         document.getElementById("cambia").style.visibility = "hidden";
+       }
+       function showElem() {
+         document.getElementById("cambia").style.visibility = "visible";
+       }
+    </script>      
+    </div>  
+    <!--Direccionar a la pagina servicios-->
+       <div class="continue">
+           <a target= "_self" class="boton-continuar" href="servicio.html">CONTINUAR</a>
+       </div>
 </div>
-        <!--Termina el cuerpo de la landign-->
-    <footer>
-            <div class="footer-inner">
-                <p>2022 Todos los derechos reservados Derco S.A</p>
-                <img src="img/logo-footer.png" alt="logo Derco">
-            </div>
-    </footer>   
+<footer>
+    <div class="footer-inner">
+        <p>2022 Todos los derechos reservados Derco S.A</p>
+        <img src="img/logo-footer.png" alt="logo Derco">
+    </div>
+</footer>   
 </body>
 </html>
 

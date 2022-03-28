@@ -1,267 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--este script sirve para linkear los iconos en toda la pagina-->
-    <script src="https://kit.fontawesome.com/58e875ea2b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,500,500i,600,600i,700,700i&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <title>Selecciona un servicio</title>
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Selección del servicio</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a target="_blank" class="boton-home" href="index.html"><img src="img/logo-nav.png" alt="Logo" class="logo"></a>
-        </div>
-    </header>
-
+<header>
+    <div>
+        <a target="_self" class="boton-home" href="index.html"><img src="img/logo-nav.png" alt="Logo" class="logo"></a>
+    </div>
+</header>
 <div class="container">
     <!--Tabla de servicios--> 
     <div class="intro-paso">
-        <h2 class="text-red"> Servicio mantenimiento </h2>
-        <p>Por favor, seleccionar una de las opciones</p>
-           
-    </div>      
-
-        <div class="container-service">
-
-     <!--Tarjeta de cada servicio-->
-     <div class="card-service">
-
+        <h2 class="text-red"> Servicio Técnico de Mantención </h2>
+        <p>Por favor, seleccionar una de las opciones</p>           
+    </div>  
+    <!--Tarjetas-->     
+    <div class="container-service">  
+        <!--Tarjeta de cada servicio Mantenimiento-->
+        <div class="card-service">            
+        <!--Nombre de cada servicio-->
+        <div class="title-service">
+        <h2 class="text-red">MANTENIMIENTO</h2>
+        </div>            
+        <!--Tiempo del servicio-->
+        <div class="hours-service">
+            <p class="text-red">DURACIÓN UNA HORA</p>
+        </div>            
+        <!--Costo del servicio-->
+        <div class="price-service">
+            <h2>$00.000</h2><!--Mostrar de base de datos el campo precio_mantenimiento-->
+        </div>
+        <hr>   
+        <!--Plus Resumen-->
+        <div class="plus-service">
+            <ul>
+                <li id="mas">CONSERVA GARANTÍA</li>                        
+            </ul>
+        </div>
+        <!--Items resumidos-->
+        <div class="item-resume">
+            <ul>
+                <li> Mantenimiento básico recomendado por el fabricante.</li>
+                <li>Incluye todos los repuestos e insumos</li>  
+            </ul>
+        </div>            
+        <!--Boton confirmacion-->
+        <div class="confirm-service">
+            <form action="https://www....">
+                <button name="nombreservicio" type="submit">SELECCIONAR</button><!--Este boton debe redireccionar a horarios, ademas de guardar el dato "mantenimiento"-->
+            </form>
+        </div>   
+        </div>   
+        <!--Tarjeta de cada servicio Full-->
+        <div class="card-service">
         <!--Nombre de cada servicio-->
         <div class="title-service">
         <span> MANTENIMIENTO</span><h2 class="text-red">FULL</h2>
         </div>
-
         <!--Tiempo del servicio-->
         <div class="hours-service">
             <p class="text-red">DURACIÓN DOS HORAS</p>
         </div>
-
         <!--Costo del servicio-->
-        <div class="price-service">
-            <h2>$000.000</h2>
-            <p>Precio base + $58.000*</p>
+        <div class="price-service">            
+            <h2>$000.000</h2> <!--Mostrar (precio_mantenimiento + 58.000) = precio final full-->
         </div>
-        <hr>
-        
+        <hr>        
         <!--Plus Resumen-->
         <div class="plus-service">
             <ul class="plus-service">
-                <li>GARANTIA +</li>
-                <li>LAVADO +</li>
+                <li>CONSERVA GARANTÍA</li>
+                <li>LAVADO</li>
                 <li>BALANCEO</li>
-                <li id="mas">ALINEADO +</li>
+                <li id="mas">ALINEADO</li>
                 <li id="mas">SANITIZACIÓN DE DUCTOS</li>
             </ul>
         </div>
         <!--Items resumidos-->
         <div class="item-resume">
             <ul>
-                <li>17 operaciones/acciones en tu vehiculo</li>
+                <li>17 operaciones/acciones en tu vehículo</li>
                 <li>Incluye todos los repuestos e insumos</li>  
             </ul>
         </div>
-
         <!--Boton confirmacion-->
         <div class="confirm-service">
-                <form action="https://www....">
-                    <button name="nombreservicio" type="submit">SELECCIONAR</button>
-                </form>
-        </div>
-
-        <!--Seccion de los Items -->
-        <div class="items-service">
-            <ul>
-                <li><a href="#"> Ver detalle del servicio </a><i class="fa-solid fa-angle-down"></i></li>
-            </ul>
-         </div>
-
-        
-    </div>
-    
-           
-            <!--Tarjeta de cada servicio-->
-            <div class="card-service">
-
+            <form action="https://www....">
+                <button name="nombreservicio" type="submit">SELECCIONAR</button><!--Este boton debe redireccionar a extra, ademas de guardar el dato "full"-->
+            </form>
+        </div>    
+        </div>               
+        <!--Tarjeta de cada servicio Plus-->
+        <div class="card-service">
                 <!--Nombre de cada servicio-->
                 <div class="title-service">
                 <span> MANTENIMIENTO</span><h2 class="text-red">PLUS</h2>
                 </div>
-
                 <!--Tiempo del servicio-->
                 <div class="hours-service">
                     <p class="text-red">DURACIÓN UNA HORA Y MEDIA</p>
                 </div>
-
                 <!--Costo del servicio-->
                 <div class="price-service">
-                    <h2>$000.000</h2>
-                    <p>Precio base + $25.000*</p>
+                    <h2>$000.000</h2> <!--Mostrar (precio_mantenimiento + 25.000) = precio final plus-->
                 </div>
-                <hr>
-                
+                <hr>                
                 <!--Plus Resumen-->
                 <div class="plus-service">
                     <ul>
-                        <li>GARANTIA +</li>
-                        <li>LAVADO +</li>
+                        <li>CONSERVA GARANTÍA</li>
+                        <li id="mas">LAVADO</li>
                         <li id="mas">BALANCEO</li>
                     </ul>
                 </div>
                 <!--Items resumidos-->
                 <div class="item-resume">
                     <ul>
-                        <li>15 operaciones/acciones en tu vehiculo</li>
+                        <li>15 operaciones/acciones en tu vehículo</li>
                         <li>Incluye todos los repuestos e insumos</li>  
                     </ul>
                 </div>
-
                 <!--Boton confirmacion-->
                 <div class="confirm-service">
                         <form action="https://www....">
-                            <button name="nombreservicio" type="submit">SELECCIONAR</button>
+                            <button name="nombreservicio" type="submit">SELECCIONAR</button><!--Este boton debe redireccionar a extra, ademas de guardar el dato "plus"-->
                         </form>
-                </div>
-
-                <!--Seccion de los Items -->
-                <div class="items-service">
-                    <ul>
-                        <li><a href="#"> Ver detalle del servicio </a><i class="fa-solid fa-angle-down"></i></li>
-                    </ul>
-                 </div>
-    
-                
-            </div>
-            
-            <!--Tarjeta de cada servicio-->
-            
-            <div class="card-service">
-            
-             <!--Nombre de cada servicio-->
-             <div class="title-service">
-             <h2 class="text-red">MANTENIMIENTO</h2>
-             </div>
-         
-             <!--Tiempo del servicio-->
-             <div class="hours-service">
-                 <p class="text-red">DURACIÓN UNA HORA</p>
-             </div>
-         
-             <!--Costo del servicio-->
-             <div class="price-service">
-                 <h2>$00.000</h2>
-                 <p>Precio base*</p>
-             </div>
+                </div>    
+        </div>                        
+        <!--Tarjeta de cada servicio Aceite-->
+        <div class="card-service">            
+            <!--Nombre de cada servicio-->
+            <div class="title-service">
+            <h2>CAMBIO DE ACEITE</h2>
+            </div>            
+            <!--Tiempo del servicio-->
+            <div class="hours-service">
+                <p class="text-red">DURACIÓN UNA HORA</p>
+            </div>            
+            <!--Costo del servicio-->
+            <div class="price-service">
+                <h2>$60.000</h2>
+            </div>            
             <hr>
-
-             <!--Plus Resumen-->
-             <div class="plus-service">
-                 <ul>
-                     <li id="mas">GARANTIA +</li>
-                     <li id="mas">LAVADO</li>
-                 </ul>
-             </div>
-             <!--Items resumidos-->
-             <div class="item-resume">
-                 <ul>
-                     <li> Mantenimiento básico recomendado por el fabricante.</li>
-                     <li>Incluye todos los repuestos e insumos</li>  
-                 </ul>
-             </div>
-         
-             <!--Boton confirmacion-->
-             <div class="confirm-service">
-                     <form action="https://www....">
-                         <button name="nombreservicio" type="submit">SELECCIONAR</button>
-                     </form>
-             </div>
-         
-             <!--Seccion de los Items -->
-             <div class="items-service">
+            <!--Plus Resumen-->
+            <div class="plus-service">
                 <ul>
-                    <li><a href="#"> Ver detalle del servicio </a><i class="fa-solid fa-angle-down"></i></li>
+                    <li id="peligro">NO CONSERVA GARANTÍA</li>
                 </ul>
-             </div>
-
             </div>
-
-            
-            <!--Tarjeta de cada servicio-->
-            <div class="card-service">
-            
-                <!--Nombre de cada servicio-->
-                <div class="title-service">
-                <h2>CAMBIO DE ACEITE</h2>
-                </div>
-            
-                <!--Tiempo del servicio-->
-                <div class="hours-service">
-                    <p class="text-red">DURACIÓN UNA HORA</p>
-                </div>
-            
-                <!--Costo del servicio-->
-                <div class="price-service">
-                    <h2>$60.000</h2>
-                </div>
-            
-                <hr>
-                <!--Plus Resumen-->
-                <div class="plus-service">
-                    <ul>
-                        <li id="peligro">NO CONSERVA GARANTIA</li>
-                    </ul>
-                </div>
-                <!--Items resumidos-->
-                <div class="item-resume">
-                    <ul>
-                        <li> Cambio de aceite.</li>
-                        <li>Cambio del filtro de aceite</li> 
-                        <li>Cambio del filtro de aire del motor.</li> 
-                    </ul>
-                </div>
-            
-                <!--Boton confirmacion-->
-                <div class="confirm-service">
-                        <form action="https://www....">
-                            <button name="nombreservicio" type="submit">SELECCIONAR</button>
-                        </form>
-                </div>
-   
-               </div>
-        
-
-            <!--Tarjeta de cada servicio-->
-            <div class="card-service">
-                <div class="title-service">
-                    <h2>NINGUNO ME CONVENCE</h2>
-                </div>
-
-                <!--Boton confirmacion-->
-                <div class="confirm-service">
-                        <form action="https://www....">
-                            <button name="nombreservicio" type="submit">SELECCIONAR</button>
-                        </form>
-                </div>
-
+            <!--Items resumidos-->
+            <div class="item-resume">
+                <ul>
+                    <li>Cambio de aceite.</li>
+                    <li>Cambio del filtro de aceite</li> 
+                    <li>Cambio del filtro de aire del motor.</li> 
+                </ul>
+            </div>            
+            <!--Boton confirmacion-->
+            <div class="confirm-service">
+                <form action="https://www....">
+                    <button name="nombreservicio" type="submit">SELECCIONAR</button><!--Este boton debe redireccionar a horarios, ademas de guardar el dato "aceite"-->
+                </form>
+            </div>   
+           </div>        
+        <!--Tarjeta de cada servicio Ninguno-->
+        <div class="card-service">
+            <div class="title-service">
+                <h2>NINGUNO ME CONVENCE</h2>
             </div>
-            
-        </div>
-    </div>
- 
+            <!--Boton confirmacion-->
+            <div class="confirm-service">
+                    <form action="https://www....">
+                        <button name="nombreservicio" type="submit">SELECCIONAR</button><!--Este boton debe redireccionar a gracias.html, ademas de guardar el dato "ninguno"-->
+                    </form>
+            </div>
+        </div>            
+    </div> 
 </div>
-<!--Termina el cuerpo de la landign-->
 <footer>
         <div class="footer-inner">
             <p>2022 Todos los derechos reservados Derco S.A</p>
             <img src="img/logo-footer.png" alt="logo Derco">
         </div>
 </footer>   
-
-
 </body>
 </html>

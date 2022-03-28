@@ -1,77 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,500,500i,600,600i,700,700i&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Seccion de horarios</title>
 </head>
 <body>
-        <header>
-            <div>
-                <a target="_blank" class="boton-home" href="index.html"><img src="img/logo-nav.png" alt="Logo" class="logo"></a>
-            </div>
-            <div class="banner">
-                <img src="https://image.derco.info/lib/fe3a15707564047f7d1777/m/5/f4cf033e-2b03-422e-bd7a-737cd301d959.png" alt="personas agendado" class="horario-img">
-            </div>
-        </header>
+<header>
+    <div>
+        <a target="_blank" class="boton-home" href="index.html"><img src="img/logo-nav.png" alt="Logo" class="logo"></a>
+    </div>
+    <div class="banner">
+        <img src="img/agendamiento.png" alt="personas agendado" class="horario-img">
+    </div>
+</header>
+<div class="container">
+    <h2> Opciones de <span class="text-red"><br>Horario para el servicio.</span></h2>
     
-    <!--Comienza el cuerpo de la landign-->
-    <div class="container">
-
-            <h2> Opciones de <span class="text-red"><br>Horario para el servicio.</span></h2>
-    
-            <div class="customer-data">
-                <hr>
-                <label class="container2">
-                    <input type="radio" checked="checked" name="radio">
-                    <span class="checkmark"></span>
-                        Prefiero por orden de llegada</label>
-     
-                  <label class="container2">
-                    <input type="radio" checked="checked" name="radio">
-                    <span class="checkmark"></span>
-                        Prefiero ir con un turno asignado</label>
-                    
-                <select name="horario">
-                    <option selected value="0"> Selecciona la hora del turno </option>
-                    <option value="1">08:00 hs</option> 
-                    <option value="2">09:00 hs</option> 
-                    <option value="3">10:00 hs</option>
-                    <option value="4">11:00 hs</option> 
-                    <option value="5">12:00 hs</option> 
-                    <option value="6">13:00 hs</option> 
-                    <option value="4">11:00 hs</option> 
-                    <option value="5">12:00 hs</option> 
-                    <option value="6">13:00 hs</option> 
-                    <option value="7">14:00 hs</option> 
-                    <option value="8">15:00 hs</option> 
-                    <option value="9">16:00 hs</option> 
-                    <option value="10">17:00 hs</option> 
-                    <option value="11">18:00 hs</option> 
-                    <option value="12">19:00 hs</option> 
-                    <option value="13">20:00 hs</option> 
-                 </select>
-                  
-            </div>  
-                <div class="continue">
-                    <a target="_blank" class="boton-continuar" href="extra.html">CONTINUAR</a>
-                </div>
-
-
-
-            <!--Termina el cuerpo de la landign-->
-        <footer>
-                <div class="footer-inner">
-                    <p>2022 Todos los derechos reservados Derco S.A</p>
-                    <img src="img/logo-footer.png" alt="logo Derco">
-                </div>
-        </footer>   
-    
-    
+<div class="customer-data">
+    <hr>
+    <label class="container2">
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+            Prefiero por orden de llegada</label>     
+      <label class="container2">
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+            Prefiero ir con un turno asignado</label>        
+    <select name="horario">
+        <option selected value="0"> Selecciona la hora del turno </option>
+        <option value="1">08:00 hs</option> 
+        <option value="2">09:00 hs</option> 
+        <option value="3">10:00 hs</option>
+        <option value="4">11:00 hs</option> 
+        <option value="5">12:00 hs</option> 
+        <option value="6">13:00 hs</option> 
+        <option value="4">11:00 hs</option> 
+        <option value="5">12:00 hs</option> 
+        <option value="6">13:00 hs</option> 
+        <option value="7">14:00 hs</option> 
+        <option value="8">15:00 hs</option> 
+        <option value="9">16:00 hs</option> 
+        <option value="10">17:00 hs</option> 
+        <option value="11">18:00 hs</option> 
+        <option value="12">19:00 hs</option> 
+        <option value="13">20:00 hs</option> 
+     </select>      
+</div>  
+<div class="continue">
+    <a target="_blank" class="boton-continuar" href="extra.html">CONTINUAR</a><!--Continuar a la pagina extras-->
+</div>
+</div>
+<footer>
+    <div class="footer-inner">
+        <p>2022 Todos los derechos reservados Derco S.A</p>
+        <img src="img/logo-footer.png" alt="logo Derco">
+    </div>
+</footer>   
 </body>
 </html>
